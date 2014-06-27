@@ -1,0 +1,10 @@
+---
+# This must produce a hash; each entry describes one configuration
+# setting. These will later be passed into event scripts as the
+# .hook.config object
+foo:
+  description: "What foo is used for"
+  default: 0
+bar:
+  description: "What bar is used for"
+  default: "Barbara"

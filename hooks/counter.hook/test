@@ -1,0 +1,15 @@
+#! /bin/js
+// -*- espresso -*-
+
+inp = JSON.parse(read(arguments[0]))
+value = inp.hook.config.value
+out = {
+  "hook": {
+    "config": {
+      "value": value + 1
+    }
+  },
+  "metadata": { }
+}
+out["metadata"][inp.hook.name] = value
+print(JSON.stringify(out))

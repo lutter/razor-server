@@ -1,0 +1,15 @@
+#! /bin/bash
+
+# This script is called when a node is bound to a new policy. It receives
+# as its sole argument the name of a file that contains the following JSON:
+#
+# {
+#   "hook": {
+#     "name": "something",
+#     "config": ... according to configuration.yaml ...
+#   },
+#   "node": ... JSON representation of node ...,
+#   "policy": ... JSON representation of policy ...
+# }
+#
+# If it produces any output,
