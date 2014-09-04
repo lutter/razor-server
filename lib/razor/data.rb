@@ -119,6 +119,7 @@ Sequel::Model.plugin Razor::Messaging::Sequel::Plugin
 # Add additional helper methods to all our models
 Sequel::Model.plugin Razor::Data
 
+require_relative 'data/hook'
 require_relative 'data/task'
 require_relative 'data/repo'
 require_relative 'data/policy'

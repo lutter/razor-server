@@ -135,12 +135,12 @@ be set. Example:
 
 ## Available events
 
-* `register-node`: triggered after a node has been registered, i.e. after
+* `node-registered`: triggered after a node has been registered, i.e. after
   its facts have been set for the first time by the Microkernel.
-* `bound-node`: triggered after a node has been bound to a policy. The
+* `node-bound`: triggered after a node has been bound to a policy. The
   script input contains a `policy` property with the details of the
   policy that has been bound to the node.
-* `reinstall-node`: triggered after a node has been marked as uninstalled
+* `node-reinstalled`: triggered after a node has been marked as uninstalled
   by the `reinstall-node` command and thus been returned to the set of
   nodes available for installation.
-* `delete-node`: triggered after a node has been deleted
+* `node-deleted`: triggered after a node has been deleted

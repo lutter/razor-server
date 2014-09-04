@@ -457,6 +457,7 @@ module Razor::Data
           kill_node.destroy
         end
         keep_node.save
+        Hook.run('register-node', node: self)
         keep_node
       end
     end
